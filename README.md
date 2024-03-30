@@ -16,8 +16,8 @@ import (
 	"context"
 	"fmt"
 
-	traq "github.com/traPtitech/go-traq"
     cname2id "github.com/oribe1115/traq-cname2id"
+	traq "github.com/traPtitech/go-traq"
 )
 
 const TOKEN = "/* your token */"
