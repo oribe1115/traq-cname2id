@@ -16,7 +16,7 @@ import (
 	"context"
 	"fmt"
 
-    cname2id "github.com/oribe1115/traq-cname2id"
+	cname2id "github.com/oribe1115/traq-cname2id"
 	traq "github.com/traPtitech/go-traq"
 )
 
@@ -26,9 +26,9 @@ func main() {
 	client := traq.NewAPIClient(traq.NewConfiguration())
 	auth := context.WithValue(context.Background(), traq.ContextAccessToken, TOKEN)
 
-    c := cname2id.NewConverter(client, auth)
-    id, _ := c.GetChannelID("#a/bb/ccc")
+	c := cname2id.NewConverter(client, auth)
+	id, _ := c.GetChannelID("#a/bb/ccc")
 
-    fmt.Println(id)
+	fmt.Println(id)
 }
 ```
